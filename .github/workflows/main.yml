@@ -2,7 +2,7 @@ name: deploy
 on:
   push:
     branches: [main] # main 分支有 push 时触发
-    paths-ignore:   # 下列文件的变更不触发部署，可以自行添加
+    paths-ignore: # 下列文件的变更不触发部署，可以自行添加
       - README.md
 jobs:
   deploy:
@@ -29,4 +29,4 @@ jobs:
           branch: gh-pages
           publish_dir: ./dist # 部署打包后的 dist 目录
           github_token: ${{ secrets.FORMCHECKREACT }} # secret 名
-         
+
