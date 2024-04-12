@@ -69,7 +69,6 @@ function App() {
   );
   return (
     <div className="container">
-      <h2>React Form Check</h2>
       <div ref={formRef}>
         <p className="form-element">
           <label>真实姓名</label>
