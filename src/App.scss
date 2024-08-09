@@ -4,16 +4,16 @@
 
   .form-element {
     padding: 15px 0;
-    position:relative;
+    position: relative;
 
     .user-form {
+      border: 2px solid #cac4c4;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 14px;
+      padding: 10px;
+      width: 420px;
 
-  border: 2px solid #cac4c4;
-	border-radius: 4px;
-	font-family: inherit;
-	font-size: 14px;
-	padding: 10px;
-	width: 420px;
       &:focus {
         outline: none;
       }
@@ -24,11 +24,11 @@
       border-radius: 4px;
       padding: 8px 12px;
       font-size: 16px;
-      width:450px!important;
+      width: 450px !important;
     }
 
-    input[type=checkbox],
-    input[type=radio] {
+    input[type='checkbox'],
+    input[type='radio'] {
       display: inline-block;
       width: 20px;
       height: 20px;
@@ -37,32 +37,30 @@
       border-radius: 50%;
       vertical-align: -4px;
       margin-left: 5px;
-
     }
 
-    input[type=checkbox]:checked,
-    input[type=radio]:checked {
+    input[type='checkbox']:checked,
+    input[type='radio']:checked {
       background-color: #ccc;
     }
-    &:last-child{
+
+    &:last-child {
       text-align: center;
     }
   }
 
-
   .warn {
     color: red;
     font-size: 12px;
-    position:absolute;
-    left:566px;
-
+    position: absolute;
+    left: 566px;
   }
 
   label {
     display: inline-block;
     width: 100px;
-    text-align:right;
-    margin-right:10px;
+    text-align: right;
+    margin-right: 10px;
   }
 
   .fa {
@@ -70,10 +68,11 @@
     // color: green;
   }
 
-  button{
-    text-align:center;
-    margin-left:180px;
+  button {
+    text-align: center;
+    margin-left: 180px;
   }
+
   // .error{
   //   font-size:13px;
   //   color:red;
@@ -81,22 +80,24 @@
   //   position: absolute;
   //   top: 28px;
   // }
-  .error:empty{
-    display:none;
+  .error:empty {
+    display: none;
   }
-  .error{
+
+  .error {
     background: url('./assets/warn.png') no-repeat left center;
     display: inline-block;
     background-size: contain;
     position: absolute;
     padding-left: 24px;
-    font-size:14px;
-    color:red;
-    margin-left:10px;
+    font-size: 14px;
+    color: red;
+    margin-left: 10px;
     position: absolute;
     top: 28px;
   }
-  .success{
+
+  .success {
     background-image: url('./assets/success.png');
     background-repeat: no-repeat;
     background-position: left center;
@@ -107,19 +108,24 @@
     position: absolute;
     top: 16px;
   }
-  .hobbies.success,.intro.success{
-    top:6px;
+
+  .hobbies.success,
+  .intro.success {
+    top: 6px;
     right: 216px;
   }
-  .info.success{
+
+  .info.success {
     right: 218px;
   }
-  .hobbies.error{
-    top:18px;
+
+  .hobbies.error {
+    top: 18px;
     right: 130px;
   }
-  .intro.error{
-    top:20px;
+
+  .intro.error {
+    top: 20px;
     right: 144px;
   }
 }
