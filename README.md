@@ -4,6 +4,25 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Currently, two official plugins are available:
 
+### 提交代码
+
+本地代码提交的时候,取消代理.然后进行提交.
+
+```
+git config --global --unset http.proxy
+```
+
+如果代理开着的.提交代码,可能会报错.需要配置http代理
+
+```
+git config --global http.proxy 127.0.0.1:7890
+git config --global https.proxy 127.0.0.1:7890
+
+```
+
+建议提交的时候.关闭代理,进行提交.
+
+
 ### 注意事项:
 
 在使用 vite 构建的时候,我们写的页面引入的 jsx 文件,浏览器无法解析.要在 vite.config.js 中进行配置.
